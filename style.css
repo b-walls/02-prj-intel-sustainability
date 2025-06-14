@@ -54,7 +54,7 @@ header p {
 }
 
 .card img {
-  width: 100%; /* Make the image responsive */
+  max-width: 100%; /* Make the image responsive */
   border-radius: 4px;
 }
 
