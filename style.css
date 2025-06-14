@@ -4,6 +4,7 @@ body {
   /* Use Inter font for body text */
   font-family: 'Inter', Arial, sans-serif;
   background-color: #F5F5F5; 
+  display: block;
 }
 
 /* Style for the header section */
@@ -51,10 +52,13 @@ header p {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   position: relative; /* Needed for the hover effect */
   transition: box-shadow 0.3s;
+  overflow: hidden; /* Make sure nothing goes outside the card */
 }
 
 .card img {
-  max-width: 100%; /* Make the image responsive */
+  width: 100%;      /* Image fills the card width */
+  height: auto;     /* Image keeps its shape */
+  display: block;   /* Removes extra space below the image */
   border-radius: 4px;
 }
 
