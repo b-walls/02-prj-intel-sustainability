@@ -4,14 +4,6 @@ body {
   /* Use Inter font for body text */
   font-family: 'Inter', Arial, sans-serif;
   background-color: #F5F5F5; 
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Minimum height is the full screen */
-}
-
-/* Make sure the footer stays at the bottom of the page */
-html, body {
-  height: 100%; /* Let the page take up the full height */
 }
 
 /* Style for the header section */
