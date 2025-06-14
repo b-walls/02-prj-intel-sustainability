@@ -62,11 +62,6 @@ header p {
   border-radius: 4px;
 }
 
-/* Make the card stand out a bit when hovered */
-.card:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
-
 /* Hide the description by default and position it over the card */
 .card-desc {
   display: none; /* Hide the description at first */
@@ -78,7 +73,7 @@ header p {
   background: rgba(0, 103, 181, 0.9); /* Slightly see-through blue */
   color: #FFFFFF; /* White text for good contrast */
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 4px;
   box-sizing: border-box;
   /* Center the text vertically and horizontally */
   align-items: center;
@@ -95,10 +90,11 @@ header p {
 .card:hover {
   /* Make the card a little bigger */
   transform: scale(1.05); /* Grows to 105% of its size */
-  /* Add a stronger shadow */
-  box-shadow: 0 8px 24px rgba(0,0,0,0.20);
+  /* Add a light blue glow using box-shadow */
+  box-shadow: 0 0 6px 2px #0068B5; /* Light blue glow */
   /* Smooth transition for the effect */
   transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #0068B5; /* Optional: Add a border on hover */
 }
 
 /* Add a smooth transition for all cards */
