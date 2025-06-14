@@ -4,6 +4,14 @@ body {
   /* Use Inter font for body text */
   font-family: 'Inter', Arial, sans-serif;
   background-color: #F5F5F5; 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimum height is the full screen */
+}
+
+/* Make sure the footer stays at the bottom of the page */
+html, body {
+  height: 100%; /* Let the page take up the full height */
 }
 
 /* Style for the header section */
@@ -102,6 +110,21 @@ header p {
   transition: box-shadow 0.3s, transform 0.3s;
 }
 
+.card h2 {
+  font-size: 1.5em; /* Slightly larger heading */
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0 0 10px; /* Space below the heading */
+  color: #0068B5; /* Dark blue text */
+}
+
+.card h3 {
+  font-size: 1.25em; /* Slightly larger heading */
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0 0 10px; /* Space below the heading */
+  color: #222222; /* Dark blue text */
+}
+
+
 /* Show the description only when hovering over the card */
 .card:hover .card-desc {
   display: flex; /* Show and center the description */
@@ -117,8 +140,8 @@ header p {
   /* Optional: Hide scrollbar for a cleaner look */
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 .timeline-slider::-webkit-scrollbar {
   display: none;             /* Chrome, Safari, Opera */
@@ -132,6 +155,14 @@ header p {
 
 /* Responsive: Stack cards vertically on small screens */
 @media (max-width: 700px) {
+  header h1 {
+    font-size: 1.75em; /* Smaller heading on small screens */
+  }
+
+  header p {
+    font-size: 1em; /* Smaller subheading on small screens */
+  }
+
   .timeline-slider {
     flex-direction: column; /* Stack cards vertically */
     overflow-x: hidden;
@@ -140,8 +171,8 @@ header p {
     gap: 20px;
     height: 80vh; /* Limit height for vertical scroll */
     padding: 20px 10px; /* Less space on small screens */
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -160,6 +191,7 @@ footer {
   padding: 20px 0;                /* Space above and below the text */
   text-align: center;             /* Center the text */
   margin-top: 0;               /* Space above the footer */
+  max-height: 100%;
 }
 
 /* Style for the footer text */
